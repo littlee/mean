@@ -1,0 +1,18 @@
+<form action="" method="post">
+	<input type="text" name="firstName" placeholder="firstName" value="{{input.firstName}}">
+	<br>
+	<input type="text" name="lastName" placeholder="lastName" value="{{input.lastName}}">
+	<br>
+	<input type="email" name="email" placeholder="email" value="{{input.email}}">
+	<br>
+	<input type="password" name="password" placeholder="password">
+	<br>
+	<button type="submit">create</button>
+
+	<br>
+	<span style="color:red">
+		{{#each error.errors}}
+			{{@key}}: {{this}}<br>
+		{{/each}}
+	</span>
+</form>

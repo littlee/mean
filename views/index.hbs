@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<form action="/users/login" method="post">
+	<input type="email" name="email" placeholder="email">
+	<br>
+	<input type="password" name="password" placeholder="password">
+	<br>
+	<button type="submit">login</button>
+	
+	<a href="/users/create">create</a>
+	<br>
+	
+	{{#if error}}
+	<span style="color:red">
+		{{error}}
+	</span>
+	{{/if}}
+</form>

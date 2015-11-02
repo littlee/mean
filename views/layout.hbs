@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{#if title}} {{title}} {{/if}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+	{{#if firstName}}
+	<h1>Hi, {{firstName}}</h1>
+	<a href="/users/logout">logout</a>
+	{{/if}}
+
+    {{{body}}}
+  </body>
+</html>
